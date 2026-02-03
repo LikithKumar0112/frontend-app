@@ -1,0 +1,19 @@
+name: Frontend Triggered Build
+
+on:
+  repository_dispatch:
+    types: [auth-release]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build frontend
+        run: echo "Building frontend after auth release"
+
