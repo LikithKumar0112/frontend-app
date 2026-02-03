@@ -1,2 +1,2 @@
-# frontend-app
-Frontend app repo for CICD-2
+# auth-service
+Authentication repo for CICD-2
